@@ -1,5 +1,5 @@
 {
-  "name": "packet-grid/php-server",
+  "name": "packet-grid/php-server-sdk",
   "description": "The PacketGrid PHP SDK for servers",
   "keywords": [
     "packetgrid",
@@ -23,7 +23,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=5.3.0",
-    "packet-grid/php-server-sdk": "@dev"
+    "packet-grid/php-server-codegen": "@dev"
   },
   "repositories": [
     {
@@ -32,6 +32,9 @@
     }
   ],
   "autoload": {
+    "classmap": [
+      "src/"
+    ],
     "psr-4": {
       "OpenAPI\\Client\\" : "sdk/lib/",
       "PacketGridSDK\\": "src/"

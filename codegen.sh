@@ -9,6 +9,6 @@ java -jar "$DIR/../openapi-generator-cli.jar" generate \
 
 # Replace name in ./sdk/composer.json
 original_composer_package_name='GIT_USER_ID\/GIT_REPO_ID'
-new_composer_package_name='packet-grid/php-server-sdk'
+new_composer_package_name='packet-grid/php-server-codegen'
 
 sed -i "" "s|${original_composer_package_name}|${new_composer_package_name}|g" "$DIR/sdk/composer.json"
