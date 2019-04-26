@@ -23,10 +23,11 @@ $packetGrid = new PacketGrid(
   $_ENV["API_KEY"]
 );
 
-$token = new CreateClientToken();
-$token->setUserId('yourUniqueUserId');
+$tokenRequest = new CreateClientToken();
+$tokenRequest->setUserId('yourUniqueUserId');
 
-$response = $packetGrid->tokens->createClientToken($token);
+$response = $packetGrid->tokens->createClientToken($tokenRequest);
+$token = $response->getToken();
 ```
 
 ## Sending a Notification
