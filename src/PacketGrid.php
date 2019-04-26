@@ -2,8 +2,6 @@
 
 namespace PacketGridSDK;
 
-require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
-
 use OpenAPI\Client\Api\NotificationsApi;
 use OpenAPI\Client\Api\ClientTokenApi;
 use OpenAPI\Client\Configuration;
