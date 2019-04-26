@@ -28,12 +28,12 @@
   "repositories": [
     {
       "type": "path",
-      "url": "sdk/"
+      "url": "codegen/"
     }
   ],
   "autoload": {
     "psr-4": {
-      "OpenAPI\\Client\\" : "sdk/lib/",
+      "OpenAPI\\Client\\" : "codegen/lib/",
       "PacketGridSDK\\": "src/"
     },
     "classmap": [

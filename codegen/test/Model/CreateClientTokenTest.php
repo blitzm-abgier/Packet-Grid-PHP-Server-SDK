@@ -79,9 +79,9 @@ class CreateClientTokenTest extends TestCase
     }
 
     /**
-     * Test attribute "external_user_id"
+     * Test attribute "user_id"
      */
-    public function testPropertyExternalUserId()
+    public function testPropertyUserId()
     {
     }
 }
