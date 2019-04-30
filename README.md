@@ -18,11 +18,6 @@ $packetGrid = new PacketGrid($tenant_id, $api_key, $is_production);
 // Instantiate the Packet Grid SDK
 $packetGrid = new PacketGrid($tenant_id, $api_key, $is_production);
 
-$packetGrid = new PacketGrid(
-  $_ENV["TENANT_ID"],
-  $_ENV["API_KEY"]
-);
-
 $tokenRequest = new CreateClientToken();
 $tokenRequest->setUserId('yourUniqueUserId');
 
