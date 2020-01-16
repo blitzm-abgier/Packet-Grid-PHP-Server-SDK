@@ -4,7 +4,7 @@
 When you want to use the SDK you have to make sure to pass your Packet Grid tenant id and Packet Grid api key in the PacketGrid constructor. The third field is optional, if set to true then you will be using the production Packet Grid environment. If left empty or set as false, then the SDK will default to your Packet Grid sandbox environment.
 
 It is recommend that you store this variables in an environment file away rather than in your source code.
-```
+```php
 /**
   * $tenant_id Your Packet Grid tenant id
   * $api_key Your Packet Grid API key
@@ -14,7 +14,7 @@ $packetGrid = new PacketGrid($tenant_id, $api_key, $is_production);
 ```
 
 ## Creating a Client Token
-```
+```php
 // Instantiate the Packet Grid SDK
 $packetGrid = new PacketGrid($tenant_id, $api_key, $is_production);
 
@@ -26,7 +26,7 @@ $token = $response->getToken();
 ```
 
 ## Sending a Notification
-```
+```php
 // Instantiate the Packet Grid SDK
 $packetGrid = new PacketGrid($tenant_id, $api_key, $is_production);
 
