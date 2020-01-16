@@ -1,5 +1,8 @@
 # Packet Grid PHP Server SDK
 
+## Install with Composer via Packagist Repo
+- `composer require packet-grid/php-server-sdk` (https://packagist.org/packages/packet-grid/php-server-sdk)
+
 ## Setup
 When you want to use the SDK you have to make sure to pass your Packet Grid tenant id and Packet Grid api key in the PacketGrid constructor. The third field is optional, if set to true then you will be using the production Packet Grid environment. If left empty or set as false, then the SDK will default to your Packet Grid sandbox environment.
 
